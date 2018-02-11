@@ -1,6 +1,7 @@
-version: 1.2    
+version: 1.2    date: 2018-2-11
 
-1. 
+1. 改变urlList.txt位置
+2. 增加.gitignore文件
 
 -----------------------------------------
 version: 1.1    date: 2018-2-9

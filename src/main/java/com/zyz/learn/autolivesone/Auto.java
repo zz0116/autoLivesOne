@@ -18,11 +18,11 @@ public class Auto {
         try {
             System.out.println("共生币智能挖矿程序已启动");
             // 读取配置文件的网址
-            File file = new File("urlList.txt");
+            File file = new File("autolivesone/src/main/resources/urlList.txt");
             if(file.exists()){
                 FileReader fileReader = new FileReader(file);
                 BufferedReader br = new BufferedReader(fileReader);
-                String lineContent = null;
+                String lineContent;
                 while((lineContent = br.readLine()) != null){
                     urlList.add(lineContent);
                 }
@@ -33,7 +33,7 @@ public class Auto {
             }
 
             System.out.println("正在为您打开网页...");
-            String url = null;
+            String url;
             int nowOpen = 0;
             int randomClose = random.nextInt(5) + 6; // 关闭时随机网址数
             int randomBrowse = random.nextInt(26) + 28; // 随机浏览时间
